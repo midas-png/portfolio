@@ -2,7 +2,7 @@ import { DefaultTheme } from 'styled-components';
 
 export const defaultTheme: DefaultTheme = {
   borderRadius: '4px',
-  fontFamily: '"Plus Jakarta Sans", sans-serif;',
+  fontFamily: '"Open Sans", sans-serif;',
   palette: {
     common: {
       black: '#222831',
