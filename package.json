@@ -28,6 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "test": "react-scripts test",
@@ -57,6 +59,7 @@
     "@typescript-eslint/parser": "^5.47.1",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-react": "^7.31.11"
+    "eslint-plugin-react": "^7.31.11",
+    "gh-pages": "^5.0.0"
   }
 }
