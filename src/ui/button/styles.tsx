@@ -1,10 +1,18 @@
+/* eslint-disable @typescript-eslint/indent */
 import styled, { css } from 'styled-components';
 import { IProps } from './props';
 
 const variantMap = {
   primary: css`
-    background: ${({ theme }) => theme.palette.common.black};
+    background: ${({ theme }) =>
+      `linear-gradient(to left, ${theme.palette.common.black} 50%, ${theme.palette.common.white} 50%) right`};
+    background-size: 200% 100%;
     color: ${({ theme }) => theme.palette.common.white};
+
+    &:hover {
+      background-position: left;
+      color: ${({ theme }) => theme.palette.common.black};
+    }
   `,
   secondary: css`
     background: ${({ theme }) => theme.palette.secondary.main};
