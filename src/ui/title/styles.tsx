@@ -51,6 +51,10 @@ export const StyledTitleRoot = styled.span<IProps>`
     `
     font-size: ${fontSize}px;
     line-height: normal;
+
+    @media screen and (max-width: 1024px) {
+      font-size: ${fontSize / 2}px;
+    }
     `}
   ${({ theme, light }) => light && `color: ${theme.palette.common.white};`}
 `;

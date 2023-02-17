@@ -20,4 +20,9 @@ export const TextfieldComponent = styled.span`
     word-break: break-word;
     color: ${({ theme }) => theme.palette.placeholder};
   }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 25px;
+    margin: 0;
+  }
 `;

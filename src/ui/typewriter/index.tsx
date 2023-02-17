@@ -8,7 +8,7 @@ export const Typewriter: FC<IProps> = ({
   eraseSpeed,
   typingDelay,
   eraseDelay,
-  fontSize = 20,
+  fontSize,
 }) => {
   const [currentText, setCurrentText] = useState('');
   const [__timeout, set__Timeout] = useState<number | null>(null);

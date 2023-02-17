@@ -12,6 +12,14 @@ export const ComponentWrapper = styled.form<{ name: string }>`
 export const FormWrapper = styled.div`
   color: ${({ theme }) => theme.palette.common.white};
   font-size: 50px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 25px;
+
+    span {
+      line-height: 40px;
+    }
+  }
 `;
 
 export const ButtonWrapper = styled.div`

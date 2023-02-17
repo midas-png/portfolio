@@ -8,6 +8,12 @@ export const HeroWrapper = styled.div<{ name: string }>`
   justify-content: space-between;
   padding: 0 50px;
   padding-top: 100px;
+
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 100px;
+    min-height: fit-content;
+    height: fit-content;
+  }
 `;
 
 export const WriterWrapper = styled.div``;

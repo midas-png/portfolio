@@ -12,4 +12,15 @@ export const NavbarWrapper = styled.header`
   a {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+    padding: 20px 0;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;
