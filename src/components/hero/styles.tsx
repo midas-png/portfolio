@@ -10,9 +10,8 @@ export const HeroWrapper = styled.div<{ name: string }>`
   padding-top: 100px;
 
   @media screen and (max-width: 1024px) {
-    padding-bottom: 100px;
-    min-height: fit-content;
-    height: fit-content;
+    min-height: 70vh;
+    padding: 50px;
   }
 `;
 
