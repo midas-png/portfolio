@@ -46,4 +46,11 @@ export const StyledTitleRoot = styled.span<IProps>`
   user-select: none;
   ${({ variant = 'h1' }) => headingStyles[variant]}
   ${({ weight = 'medium' }) => weightStyles[weight]}
+  ${({ fontSize }) =>
+    fontSize &&
+    `
+    font-size: ${fontSize}px;
+    line-height: normal;
+    `}
+  ${({ theme, light }) => light && `color: ${theme.palette.common.white};`}
 `;

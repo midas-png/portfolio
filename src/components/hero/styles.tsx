@@ -5,8 +5,9 @@ export const HeroWrapper = styled.div<{ name: string }>`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   min-height: 100vh;
-  padding-top: 100px;
   justify-content: space-between;
+  padding: 0 50px;
+  padding-top: 100px;
 `;
 
 export const WriterWrapper = styled.div``;

@@ -5,9 +5,11 @@ export const defaultTheme: DefaultTheme = {
   fontFamily: '"Montserrat", sans-serif;',
   palette: {
     common: {
-      black: '#222831',
-      white: '#ffffff',
+      black: '#000',
+      white: '#fff',
+      tertiary: '#ad00ff',
     },
+    placeholder: '#555',
     primary: {
       main: '#726a95',
       contrastText: '#ffffff',

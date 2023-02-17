@@ -15,8 +15,16 @@ const variantMap = {
     }
   `,
   secondary: css`
-    background: ${({ theme }) => theme.palette.secondary.main};
-    color: ${({ theme }) => theme.palette.secondary.contrastText};
+    background: ${({ theme }) =>
+      `linear-gradient(to left, ${theme.palette.common.black} 50%, ${theme.palette.common.white} 50%) right`};
+    background-size: 200% 100%;
+    color: ${({ theme }) => theme.palette.common.white};
+    border: ${({ theme }) => `2px solid ${theme.palette.common.white}`};
+
+    &:hover {
+      background-position: left;
+      color: ${({ theme }) => theme.palette.common.black};
+    }
   `,
   tertiary: css`
     background: ${({ theme }) => theme.palette.primary.main};
@@ -66,7 +74,7 @@ export const ButtonComponent = styled.button<IProps>`
   cursor: pointer;
   ${({ variant = 'primary' }) => variantMap[variant]};
   ${({ size = 'medium' }) => sizeMap[size]};
-  ${({ shadow = 'primary' }) => shadowMap[shadow]};
+  ${({ shadow }) => shadow && shadowMap[shadow]};
 
   &:active {
     transform: scale(0.9);

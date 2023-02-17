@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
-import { Hero } from 'components';
+import { Home } from './Home';
 import { ROUTES } from 'data';
 
 export const AppRouter = () => {
   return (
     <Routes>
-      <Route path={ROUTES.home} element={<Hero />} />
+      <Route path={ROUTES.home} element={<Home />} />
     </Routes>
   );
 };

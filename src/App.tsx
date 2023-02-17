@@ -10,7 +10,6 @@ export const App = () => {
       <ThemeProvider theme={defaultTheme}>
         <GlobalStyles />
         <Layout />
-        <div>app</div>
       </ThemeProvider>
     </Router>
   );

@@ -3,9 +3,9 @@ import { HeroWrapper, WriterWrapper, ImageWrapper } from './styles';
 import { Typewriter } from 'ui';
 
 const texts = [
-  'Lorem ipsum text 1 lmao test sdereds',
-  'Lorem ipsum text 2 lmao test sdereds',
-  'Lorem ipsum text 3 lmao test',
+  'Middle Frontend Developer who loves solving issues.',
+  'Based in Moscow and making creative projects from the beginning.',
+  'Waiting for your offer to bring excellent experience to your business!',
 ];
 
 export const Hero: FC = () => {
