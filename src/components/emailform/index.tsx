@@ -65,10 +65,10 @@ export const EmailForm = () => {
     setLoading(true);
     emailjs
       .send(
-        'service_psibuqu',
-        'template_rs9oufa',
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         { ...values },
-        '7I4PtqCGzLSuFgxJQ'
+        process.env.REACT_APP_ACCOUNT_ID
       )
       .finally(() => setLoading(false));
   };
