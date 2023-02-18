@@ -13,10 +13,10 @@ export const Hero: FC = () => {
     <HeroWrapper name='hero'>
       <WriterWrapper>
         <Typewriter
-          speed={50}
-          eraseSpeed={30}
-          typingDelay={2000}
-          eraseDelay={3000}
+          speed={45}
+          eraseSpeed={15}
+          typingDelay={1000}
+          eraseDelay={2000}
           text={texts}
           fontSize={80}
         />
