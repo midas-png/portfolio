@@ -1,11 +1,12 @@
 import { FC } from 'react';
-import { ButtonComponent } from './styles';
+import { ButtonComponent, SpinLoader } from './styles';
 import { IProps } from './props';
 
 export const Button: FC<IProps> = ({
   variant,
   size,
   shadow,
+  loading,
   children,
   onClick,
 }) => {
@@ -14,8 +15,9 @@ export const Button: FC<IProps> = ({
       variant={variant}
       size={size}
       shadow={shadow}
+      disabled={loading || false}
       onClick={onClick}>
-      {children}
+      {loading ? <SpinLoader /> : children}
     </ButtonComponent>
   );
 };

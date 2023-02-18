@@ -27,7 +27,7 @@ export const Slider: FC = () => {
         <NotificationTopBorderWrapper>
           <NotificationTopBorder />
         </NotificationTopBorderWrapper>
-        <NotificationSwiper>Swipe</NotificationSwiper>
+        <NotificationSwiper>SWIPE</NotificationSwiper>
       </NotificationWrapper>
     </ComponentWrapper>
   );

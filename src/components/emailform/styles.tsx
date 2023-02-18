@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ComponentWrapper = styled.form<{ name: string }>`
+export const ComponentWrapper = styled.div<{ name: string }>`
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -9,7 +9,7 @@ export const ComponentWrapper = styled.form<{ name: string }>`
   min-height: 50vh;
 `;
 
-export const FormWrapper = styled.div`
+export const FormWrapper = styled.form`
   color: ${({ theme }) => theme.palette.common.white};
   font-size: 50px;
 

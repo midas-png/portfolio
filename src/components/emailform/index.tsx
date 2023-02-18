@@ -1,5 +1,6 @@
-import { FormEvent } from 'react';
+import { useState, FormEvent } from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 import {
   ComponentWrapper,
   FormWrapper,
@@ -21,7 +22,7 @@ const FORM_DATA = [
     textfield: {
       name: 'company',
       // eslint-disable-next-line prettier/prettier, quotes
-      placeholder: 'company\'s name',
+      placeholder: "company's name",
     },
     postfix: '. ',
   },
@@ -51,13 +52,25 @@ interface OfferForm {
 }
 
 export const EmailForm = () => {
+  const [loading, setLoading] = useState(false);
   const { handleSubmit, setValue } = useForm();
 
   const sendEmailOffer = (values: OfferForm) => {
     const { name, company, offer, contacts } = values;
+
     if (!name || !company || !offer || !contacts) {
       return;
     }
+
+    setLoading(true);
+    emailjs
+      .send(
+        'service_psibuqu',
+        'template_rs9oufa',
+        { ...values },
+        '7I4PtqCGzLSuFgxJQ'
+      )
+      .finally(() => setLoading(false));
   };
 
   return (
@@ -85,6 +98,7 @@ export const EmailForm = () => {
         <Button
           size='large'
           variant='secondary'
+          loading={loading}
           onClick={handleSubmit((data) => sendEmailOffer(data))}>
           Send!
         </Button>

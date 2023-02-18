@@ -1,6 +1,12 @@
 /* eslint-disable @typescript-eslint/indent */
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import { IProps } from './props';
+
+const spinnerAnimation = keyframes`
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+`;
 
 const variantMap = {
   primary: css`
@@ -68,6 +74,9 @@ const shadowMap = {
 };
 
 export const ButtonComponent = styled.button<IProps>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 800;
   font-size: 15px;
   transition: all 0.3s ease-in-out;
@@ -76,7 +85,18 @@ export const ButtonComponent = styled.button<IProps>`
   ${({ size = 'medium' }) => sizeMap[size]};
   ${({ shadow }) => shadow && shadowMap[shadow]};
 
-  &:active {
+  &:active:enabled {
     transform: scale(0.9);
   }
+
+  &:disabled {
+    background: ${({ theme }) => theme.palette.common.white};
+    border: ${({ theme }) => `2px solid ${theme.palette.common.white}`};
+    color: ${({ theme }) => theme.palette.common.black};
+    cursor: default;
+  }
+`;
+
+export const SpinLoader = styled(AiOutlineLoading3Quarters)`
+  animation: ${spinnerAnimation} 1s linear infinite;
 `;

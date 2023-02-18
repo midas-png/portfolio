@@ -4,14 +4,14 @@ import 'swiper/css';
 
 export const slidingBorderTop = keyframes`
   0% {
-    margin-right: 80px;
+    margin-left: 80px;
   }
   50% {
-    margin-right: 0px; 
-    margin-left: 0px;
+    margin-left: 0px; 
+    margin-right: 0px;
   }
   100% {
-    margin-left: 80px;
+    margin-right: 80px;
   }
 `;
 
