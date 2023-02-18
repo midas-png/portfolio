@@ -5,6 +5,7 @@ export const Home: FC = () => {
   return (
     <>
       <Hero />
+      {/* <Slider /> */}
       <EmailForm />
     </>
   );

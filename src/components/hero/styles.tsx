@@ -12,9 +12,15 @@ export const HeroWrapper = styled.div<{ name: string }>`
   @media screen and (max-width: 1024px) {
     min-height: 70vh;
     padding: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 `;
 
 export const WriterWrapper = styled.div``;
 
-export const ImageWrapper = styled.div``;
+export const ImageWrapper = styled.div`
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+`;
