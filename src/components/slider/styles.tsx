@@ -31,6 +31,10 @@ export const SliderWrapper = styled(Swiper)`
     justify-content: center;
     align-items: center;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 400px;
+  }
 `;
 
 export const Slide = styled(SwiperSlide)``;

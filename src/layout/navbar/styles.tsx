@@ -8,6 +8,7 @@ export const NavbarWrapper = styled.header`
   align-items: center;
   padding: 20px 50px;
   z-index: 999;
+  background: ${({ theme }) => theme.palette.common.white};
 
   a {
     cursor: pointer;

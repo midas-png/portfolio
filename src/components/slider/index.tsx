@@ -8,20 +8,53 @@ import {
   NotificationTopBorderWrapper,
   NotificationTopBorder,
 } from './styles';
+import { Project } from 'components';
+
+const PROJECTS = [
+  {
+    name: 'uCode',
+    company: 'IThub Group',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.`,
+    link: 'http://188.225.83.40/',
+  },
+  {
+    name: 'Pollhub',
+    company: 'IThub Group',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.`,
+    link: 'https://pollhub.ru/',
+  },
+  {
+    name: 'badTenant',
+    company: 'Self-made project',
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.`,
+    link: 'http://217.151.229.239/',
+  },
+];
 
 export const Slider: FC = () => {
   return (
     <ComponentWrapper>
-      <SliderWrapper>
-        <Slide>Slide 1</Slide>
-        <Slide>Slide 2</Slide>
-        <Slide>Slide 3</Slide>
-        <Slide>Slide 4</Slide>
-        <Slide>Slide 5</Slide>
-        <Slide>Slide 6</Slide>
-        <Slide>Slide 7</Slide>
-        <Slide>Slide 8</Slide>
-        <Slide>Slide 9</Slide>
+      <SliderWrapper loop={true}>
+        {PROJECTS.map(({ name, company, description, link }, index) => (
+          <Slide key={Math.random()}>
+            <Project
+              name={name}
+              company={company}
+              description={description}
+              link={link}
+              reverse={index % 2 === 0}
+            />
+          </Slide>
+        ))}
       </SliderWrapper>
       <NotificationWrapper>
         <NotificationTopBorderWrapper>
