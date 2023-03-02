@@ -22,14 +22,14 @@ const variantMap = {
   `,
   secondary: css`
     background: ${({ theme }) =>
-      `linear-gradient(to left, ${theme.palette.common.black} 50%, ${theme.palette.common.white} 50%) right`};
+      `linear-gradient(to left, ${theme.palette.common.white} 50%, ${theme.palette.common.black} 50%) right`};
     background-size: 200% 100%;
-    color: ${({ theme }) => theme.palette.common.white};
-    border: ${({ theme }) => `2px solid ${theme.palette.common.white}`};
+    color: ${({ theme }) => theme.palette.common.black};
+    border: ${({ theme }) => `2px solid ${theme.palette.common.black}`};
 
     &:hover {
       background-position: left;
-      color: ${({ theme }) => theme.palette.common.black};
+      color: ${({ theme }) => theme.palette.common.white};
     }
   `,
   tertiary: css`
@@ -77,6 +77,7 @@ export const ButtonComponent = styled.button<IProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+  height: fit-content;
   font-weight: 800;
   font-size: 15px;
   transition: all 0.3s ease-in-out;
