@@ -27,7 +27,7 @@ export const ContentWrapper = styled.div<{ reverse?: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  ${({ reverse }) => reverse && 'justify-self: center;'}
+  ${({ reverse }) => !reverse && 'justify-self: center;'}
 `;
 
 export const TitleWrapper = styled.div`

@@ -3,8 +3,14 @@ import styled from 'styled-components';
 export const ComponentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 35px;
   padding: 0 100px;
+`;
+
+export const ComponentStackWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 `;
 
 export const HeaderWrapper = styled.div`

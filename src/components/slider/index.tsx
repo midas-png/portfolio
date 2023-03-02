@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import {
   ComponentWrapper,
+  ComponentSliderWrapper,
   SliderWrapper,
   Slide,
   NotificationWrapper,
@@ -8,6 +9,7 @@ import {
   NotificationTopBorderWrapper,
   NotificationTopBorder,
 } from './styles';
+import { Title } from 'ui';
 import { Project } from 'components';
 
 const PROJECTS = [
@@ -43,25 +45,28 @@ const PROJECTS = [
 export const Slider: FC = () => {
   return (
     <ComponentWrapper>
-      <SliderWrapper loop={true}>
-        {PROJECTS.map(({ name, company, description, link }, index) => (
-          <Slide key={Math.random()}>
-            <Project
-              name={name}
-              company={company}
-              description={description}
-              link={link}
-              reverse={index % 2 === 0}
-            />
-          </Slide>
-        ))}
-      </SliderWrapper>
-      <NotificationWrapper>
-        <NotificationTopBorderWrapper>
-          <NotificationTopBorder />
-        </NotificationTopBorderWrapper>
-        <NotificationSwiper>SWIPE</NotificationSwiper>
-      </NotificationWrapper>
+      <Title fontSize={60}>What I created</Title>
+      <ComponentSliderWrapper>
+        <SliderWrapper loop={true}>
+          {PROJECTS.map(({ name, company, description, link }, index) => (
+            <Slide key={Math.random()}>
+              <Project
+                name={name}
+                company={company}
+                description={description}
+                link={link}
+                reverse={index % 2 === 0}
+              />
+            </Slide>
+          ))}
+        </SliderWrapper>
+        <NotificationWrapper>
+          <NotificationTopBorderWrapper>
+            <NotificationTopBorder />
+          </NotificationTopBorderWrapper>
+          <NotificationSwiper>SWIPE</NotificationSwiper>
+        </NotificationWrapper>
+      </ComponentSliderWrapper>
     </ComponentWrapper>
   );
 };

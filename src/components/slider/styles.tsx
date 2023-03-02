@@ -18,8 +18,14 @@ export const slidingBorderTop = keyframes`
 export const ComponentWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  padding: 100px;
+`;
+
+export const ComponentSliderWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   gap: 15px;
-  padding: 50px;
 `;
 
 export const SliderWrapper = styled(Swiper)`
