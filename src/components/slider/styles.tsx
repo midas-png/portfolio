@@ -20,6 +20,11 @@ export const ComponentWrapper = styled.div`
   flex-direction: column;
   gap: 30px;
   padding: 100px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 50px;
+    gap: 0;
+  }
 `;
 
 export const ComponentSliderWrapper = styled.div`

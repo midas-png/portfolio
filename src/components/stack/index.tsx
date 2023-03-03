@@ -42,8 +42,10 @@ export const Stack: FC = () => {
           ))}
         </HeaderWrapper>
         <StackWrapper>
-          {stack.map(({ name }) => (
-            <StackTechnology key={Math.random()}>{name}</StackTechnology>
+          {stack.map(({ name, Icon }) => (
+            <StackTechnology key={Math.random()}>
+              {name} {Icon && <Icon />}
+            </StackTechnology>
           ))}
         </StackWrapper>
       </ComponentStackWrapper>

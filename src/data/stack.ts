@@ -1,164 +1,189 @@
+import { DiReact, DiAngularSimple, DiSass } from 'react-icons/di';
+import {
+  SiStyledcomponents,
+  SiMobx,
+  SiRedux,
+  SiOpenapiinitiative,
+  SiEslint,
+  SiPrettier,
+  SiNpm,
+  SiNodedotjs,
+  SiExpress,
+  SiSequelize,
+  SiDjango,
+  SiSocketdotio,
+  SiSwagger,
+  SiJavascript,
+  SiTypescript,
+  SiJava,
+  SiPython,
+  SiTestinglibrary,
+  SiJest,
+  SiPostgresql,
+  SiMysql,
+  SiDocker,
+  SiNginx,
+  SiGithubactions,
+  SiWindows,
+  SiUbuntu,
+} from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
+
 export const STACK = {
   frontend: [
     {
       name: 'React',
-      icon: '',
+      Icon: DiReact,
     },
     {
       name: 'Angular',
-      icon: '',
+      Icon: DiAngularSimple,
     },
     {
       name: 'Next.js',
-      icon: '',
+      Icon: TbBrandNextjs,
     },
     {
       name: 'styled-components',
-      icon: '',
+      Icon: SiStyledcomponents,
     },
     {
       name: 'SCSS/Sass',
-      icon: '',
+      Icon: DiSass,
     },
     {
       name: 'MobX',
-      icon: '',
+      Icon: SiMobx,
     },
     {
       name: 'Redux',
-      icon: '',
+      Icon: SiRedux,
     },
     {
       name: 'axios',
-      icon: '',
     },
     {
       name: 'openapi-generator',
-      icon: '',
+      Icon: SiOpenapiinitiative,
     },
     {
       name: 'React-hook-form',
-      icon: '',
     },
     {
       name: 'yup',
-      icon: '',
     },
     {
       name: 'eslint',
-      icon: '',
+      Icon: SiEslint,
     },
     {
       name: 'Prettier',
-      icon: '',
+      Icon: SiPrettier,
     },
     {
       name: 'NPM',
-      icon: '',
+      Icon: SiNpm,
     },
   ],
   backend: [
     {
       name: 'NodeJS',
-      icon: '',
+      Icon: SiNodedotjs,
     },
     {
       name: 'express.js',
-      icon: '',
+      Icon: SiExpress,
     },
     {
       name: 'Sequelize',
-      icon: '',
+      Icon: SiSequelize,
     },
     {
       name: 'Django',
-      icon: '',
+      Icon: SiDjango,
     },
     {
       name: 'cors',
-      icon: '',
     },
     {
       name: 'JWT',
-      icon: '',
     },
     {
       name: 'socket.io',
-      icon: '',
+      Icon: SiSocketdotio,
     },
     {
       name: 'Swagger',
-      icon: '',
+      Icon: SiSwagger,
     },
     {
       name: 'NPM',
-      icon: '',
+      Icon: SiNpm,
     },
   ],
   languages: [
     {
       name: 'JavaScript',
-      icon: '',
+      Icon: SiJavascript,
     },
     {
       name: 'TypeScript',
-      icon: '',
+      Icon: SiTypescript,
     },
     {
       name: 'Java',
-      icon: '',
+      Icon: SiJava,
     },
     {
       name: 'Python',
-      icon: '',
+      Icon: SiPython,
     },
   ],
   testing: [
     {
       name: 'React testing library',
-      icon: '',
+      Icon: SiTestinglibrary,
     },
     {
       name: 'Jest',
-      icon: '',
+      Icon: SiJest,
     },
   ],
   database: [
     {
       name: 'PostgreSQL',
-      icon: '',
+      Icon: SiPostgresql,
     },
     {
       name: 'MySQL',
-      icon: '',
+      Icon: SiMysql,
     },
   ],
   devops: [
     {
       name: 'Docker',
-      icon: '',
+      Icon: SiDocker,
     },
     {
       name: 'docker-compose',
-      icon: '',
     },
     {
       name: 'nginx',
-      icon: '',
+      Icon: SiNginx,
     },
     {
       name: 'Github Actions',
-      icon: '',
+      Icon: SiGithubactions,
     },
   ],
   os: [
     {
       name: 'Windows',
-      icon: '',
+      Icon: SiWindows,
     },
     {
       name: 'Ubuntu',
-      icon: '',
+      Icon: SiUbuntu,
     },
   ],
 };
