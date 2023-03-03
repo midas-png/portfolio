@@ -89,6 +89,7 @@ export const TreePathCircle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
   border-radius: 50px;
   border: ${({ theme }) => `2px solid ${theme.palette.common.tertiary}`};
   height: 100px;
