@@ -10,10 +10,14 @@ export const HeroWrapper = styled.div<{ name: string }>`
   padding-top: 100px;
 
   @media screen and (max-width: 1024px) {
-    min-height: 70vh;
+    min-height: 30vh;
     padding: 50px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+
+  @media screen and (max-width: 786px) {
+    min-height: 50vh;
   }
 `;
 

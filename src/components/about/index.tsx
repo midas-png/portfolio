@@ -21,13 +21,23 @@ export const About: FC = () => {
       <Title fontSize={60}>About me</Title>
       <AboutWrapper>
         <AboutDescription>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          I'm 20 years old enthusiastic computer science student and frontend
+          developer from IThub College, based in Moscow, with one year of
+          commertial experience in web development. Looking to deliver excellent
+          web development skills in JavaScript and TypeScript to help grow the
+          business. <br />I love coding especially with JavaScript and
+          TypeScript. Also I was learning Python and Java in the college.
+          <br /> I decided to become a programmer after I passed the exams for
+          the universities to become a translator, but I accidentally pressed on
+          some programming learning videos using HTML, CSS and JavaScript and it
+          became extremely interesting for me. So right before sending documents
+          to the universities I decided to become a pro at programming. I went
+          to private IT college called ITHub College and assigned a goal to
+          become a Middle Programmer on my graduation. After 1.5 year of hard
+          and good learning and successes of my team project, they offered me my
+          first job as junior frontend developer. It helped me to get a lot of
+          hard and soft skills. And now I'm searhing for new experience and
+          goals to be achieved.
         </AboutDescription>
         <TreePathWrapper>
           <TreePath>
@@ -56,12 +66,9 @@ export const About: FC = () => {
             </TreePathCircleWrapper>
             <TreePathLine />
             <TreePathCircleWrapper>
-              <TreePathCircleDescription>
-                Pre-middle / Middle Frontend Developer
-              </TreePathCircleDescription>
               <TreePathCircle>3</TreePathCircle>
               <TreePathCompanyWrapper>
-                <TreePathCompanyTitle>Your Company</TreePathCompanyTitle>
+                <TreePathCompanyTitle>Maybe your company</TreePathCompanyTitle>
                 <TreePathCompanySubtitle>March 2023 -</TreePathCompanySubtitle>
               </TreePathCompanyWrapper>
             </TreePathCircleWrapper>

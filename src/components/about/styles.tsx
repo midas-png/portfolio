@@ -56,6 +56,10 @@ export const TreePathCircleDescription = styled.span`
   width: 150px;
   text-align: center;
   font-size: 14px;
+
+  @media screen and (max-width: 786px) {
+    right: 90px;
+  }
 `;
 
 export const TreePathCompanyWrapper = styled.div`
