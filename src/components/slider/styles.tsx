@@ -30,7 +30,6 @@ export const ComponentWrapper = styled.div`
 export const ComponentSliderWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 15px;
 `;
 
 export const SliderWrapper = styled(Swiper)`
@@ -41,6 +40,10 @@ export const SliderWrapper = styled(Swiper)`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: fit-content;
   }
 
   @media screen and (max-width: 768px) {
