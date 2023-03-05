@@ -25,19 +25,18 @@ export const About: FC = () => {
           developer from IThub College, based in Moscow, with one year of
           commertial experience in web development. Looking to deliver excellent
           web development skills in JavaScript and TypeScript to help grow the
-          business. <br />I love coding especially with JavaScript and
-          TypeScript. Also I was learning Python and Java in the college.
+          business. Also I was learning Python and Java in the college.
           <br /> I decided to become a programmer after I passed the exams for
           the universities to become a translator, but I accidentally pressed on
-          some programming learning videos using HTML, CSS and JavaScript and it
+          play button of learning video about HTML, CSS and JavaScript and it
           became extremely interesting for me. So right before sending documents
           to the universities I decided to become a pro at programming. I went
           to private IT college called ITHub College and assigned a goal to
           become a Middle Programmer on my graduation. After 1.5 year of hard
-          and good learning and successes of my team project, they offered me my
-          first job as junior frontend developer. It helped me to get a lot of
-          hard and soft skills. And now I'm searhing for new experience and
-          goals to be achieved.
+          working, learning and successes of my team project, I got my first job
+          as junior frontend developer. It helped me to get a lot of hard and
+          soft skills. And now I'm searhing for new experience and goals to be
+          achieved.
         </AboutDescription>
         <TreePathWrapper>
           <TreePath>

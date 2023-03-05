@@ -33,7 +33,7 @@ export const Stack: FC = () => {
           {TYPES.map((name) => (
             <ButtonWrapper key={Math.random()}>
               <Button
-                variant={stackType === name ? 'primary' : 'secondary'}
+                variant={stackType === name ? 'tertiary' : 'secondary'}
                 size='large'
                 onClick={() => setStackType(name)}>
                 {name}

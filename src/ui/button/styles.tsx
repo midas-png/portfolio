@@ -33,12 +33,17 @@ const variantMap = {
     }
   `,
   tertiary: css`
-    background: ${({ theme }) => theme.palette.primary.main};
-    color: ${({ theme }) => theme.palette.primary.main};
+    background: ${({ theme }) =>
+      `linear-gradient(to left, ${theme.palette.common.black} 50%, ${theme.palette.common.white} 50%) right`};
+    background-size: 200% 100%;
+    color: ${({ theme }) => theme.palette.common.white};
   `,
   quaternary: css`
-    background: ${({ theme }) => theme.palette.primary.main};
-    color: ${({ theme }) => theme.palette.primary.main};
+    background: ${({ theme }) =>
+      `linear-gradient(to left, ${theme.palette.common.white} 50%, ${theme.palette.common.black} 50%) right`};
+    background-size: 200% 100%;
+    color: ${({ theme }) => theme.palette.common.black};
+    border: ${({ theme }) => `2px solid ${theme.palette.common.black}`};
   `,
 };
 

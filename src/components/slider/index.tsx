@@ -23,7 +23,6 @@ const PROJECTS = [
     Also I have been communitacing a lot with design team, backend team and the managers.
 `,
     link: 'https://disk.yandex.ru/d/_40OHIKCqS8cxA',
-    linkIssue: true,
   },
   {
     name: 'Pollhub',
@@ -53,20 +52,17 @@ export const Slider: FC = () => {
       <Title fontSize={60}>What I created</Title>
       <ComponentSliderWrapper>
         <SliderWrapper loop={true}>
-          {PROJECTS.map(
-            ({ name, company, description, link, linkIssue }, index) => (
-              <Slide key={Math.random()}>
-                <Project
-                  name={name}
-                  company={company}
-                  description={description}
-                  link={link}
-                  linkIssue={linkIssue}
-                  reverse={index % 2 === 0}
-                />
-              </Slide>
-            )
-          )}
+          {PROJECTS.map(({ name, company, description, link }, index) => (
+            <Slide key={Math.random()}>
+              <Project
+                name={name}
+                company={company}
+                description={description}
+                link={link}
+                reverse={index % 2 === 0}
+              />
+            </Slide>
+          ))}
         </SliderWrapper>
         <NotificationWrapper>
           <NotificationTopBorderWrapper>
