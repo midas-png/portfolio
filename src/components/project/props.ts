@@ -6,4 +6,5 @@ export interface IProps {
   description: ReactNode;
   link: string;
   reverse?: boolean;
+  linkIssue?: boolean;
 }

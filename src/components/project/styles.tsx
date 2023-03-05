@@ -55,3 +55,8 @@ export const ProjectDescription = styled.span`
     width: 100%;
   }
 `;
+
+export const ProjectIssueWarning = styled.span`
+  color: ${({ theme }) => theme.palette.common.black};
+  opacity: 0.5;
+`;

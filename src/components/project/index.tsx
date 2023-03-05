@@ -5,6 +5,7 @@ import {
   ContentWrapper,
   TitleWrapper,
   ProjectDescription,
+  ProjectIssueWarning,
   Subtitle,
 } from './styles';
 import { IProps } from './props';
@@ -15,6 +16,7 @@ export const Project: FC<IProps> = ({
   company,
   description,
   link,
+  linkIssue,
   reverse,
 }) => {
   return (
@@ -29,6 +31,11 @@ export const Project: FC<IProps> = ({
         <div>
           <Button onClick={() => open(link)}>Learn more</Button>
         </div>
+        {linkIssue && (
+          <ProjectIssueWarning>
+            Due to some issues I can't leave the link to the project
+          </ProjectIssueWarning>
+        )}
       </ContentWrapper>
     </ProjectWrapper>
   );
