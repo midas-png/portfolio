@@ -1,12 +1,7 @@
 import { FC } from 'react';
 import { HeroWrapper, WriterWrapper, ImageWrapper } from './styles';
+import { TEXT } from 'data';
 import { Typewriter } from 'ui';
-
-const texts = [
-  'Middle Frontend Developer who loves solving issues.',
-  'Based in Moscow and making creative projects from the beginning.',
-  'Waiting for your offer to bring excellent experience to your business!',
-];
 
 export const Hero: FC = () => {
   return (
@@ -17,7 +12,7 @@ export const Hero: FC = () => {
           eraseSpeed={15}
           typingDelay={1000}
           eraseDelay={2000}
-          text={texts}
+          text={TEXT}
           fontSize={80}
         />
       </WriterWrapper>
