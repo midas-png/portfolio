@@ -6,6 +6,7 @@ export const ProjectWrapper = styled.div`
   gap: 30px;
   height: 100%;
   width: 100%;
+  background: ${({ theme }) => theme.palette.common.white};
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -47,6 +48,7 @@ export const Subtitle = styled.span`
 export const ProjectDescription = styled.span`
   width: 600px;
   line-height: 24px;
+  color: ${({ theme }) => theme.palette.common.black};
 
   @media screen and (max-width: 1024px) {
     width: 90%;

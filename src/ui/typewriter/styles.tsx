@@ -12,6 +12,7 @@ export const TypewriterWrapper = styled.div`
 
 export const TypewriterText = styled.span<{ fontSize?: number }>`
   font-size: ${({ fontSize = 20 }) => `${fontSize}px`};
+  color: ${({ theme }) => theme.palette.common.black};
 
   @media screen and (max-width: 1024px) {
     font-size: ${({ fontSize = 20 }) => `${fontSize / 2}px`};
@@ -20,6 +21,7 @@ export const TypewriterText = styled.span<{ fontSize?: number }>`
 
 export const TypewriterCursor = styled.span<{ fontSize?: number }>`
   font-size: ${({ fontSize }) => `${fontSize}px`};
+  color: ${({ theme }) => theme.palette.common.black};
   animation: ${blinking} 1s infinite;
 
   @media screen and (max-width: 1024px) {

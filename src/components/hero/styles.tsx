@@ -8,6 +8,7 @@ export const HeroWrapper = styled.div<{ name: string }>`
   justify-content: space-between;
   padding: 0 50px;
   padding-top: 100px;
+  background: ${({ theme }) => theme.palette.common.white};
 
   @media screen and (max-width: 1024px) {
     min-height: 30vh;

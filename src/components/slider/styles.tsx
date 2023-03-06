@@ -20,6 +20,7 @@ export const ComponentWrapper = styled.div`
   flex-direction: column;
   gap: 30px;
   padding: 100px;
+  background: ${({ theme }) => theme.palette.common.white};
 
   @media screen and (max-width: 1024px) {
     padding: 50px;
@@ -73,4 +74,6 @@ export const NotificationTopBorder = styled.div`
   animation: ${slidingBorderTop} 1s infinite;
 `;
 
-export const NotificationSwiper = styled.span``;
+export const NotificationSwiper = styled.span`
+  color: ${({ theme }) => theme.palette.common.black};
+`;

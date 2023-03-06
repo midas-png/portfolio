@@ -5,6 +5,7 @@ export const ComponentWrapper = styled.div`
   flex-direction: column;
   gap: 35px;
   padding: 0 100px;
+  background: ${({ theme }) => theme.palette.common.white};
 
   @media screen and (max-width: 1024px) {
     padding: 50px;
@@ -49,6 +50,7 @@ export const StackTechnology = styled.span`
   display: flex;
   align-items: center;
   gap: 5px;
+  color: ${({ theme }) => theme.palette.common.black};
   border: ${({ theme }) => `2px solid ${theme.palette.common.tertiary}`};
   border-radius: 30px;
   padding: 10px 15px;
