@@ -59,6 +59,7 @@ export const NotificationWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  margin-top: 30px;
 `;
 
 export const NotificationTopBorderWrapper = styled.div`

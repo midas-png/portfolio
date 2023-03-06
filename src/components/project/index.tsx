@@ -5,6 +5,7 @@ import {
   ContentWrapper,
   TitleWrapper,
   ProjectDescription,
+  ProjectImage,
   Subtitle,
 } from './styles';
 import { IProps } from './props';
@@ -15,11 +16,14 @@ export const Project: FC<IProps> = ({
   company,
   description,
   link,
+  image,
   reverse,
 }) => {
   return (
     <ProjectWrapper>
-      <ImageWrapper reverse={reverse}></ImageWrapper>
+      <ImageWrapper reverse={reverse}>
+        <ProjectImage src={image} />
+      </ImageWrapper>
       <ContentWrapper reverse={reverse}>
         <TitleWrapper>
           <Title>{name}</Title>

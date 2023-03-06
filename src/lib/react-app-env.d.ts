@@ -5,3 +5,8 @@ declare namespace NodeJS {
     REACT_APP_ACCOUNT_ID: string;
   }
 }
+
+declare module '*.png';
+declare module '*.svg';
+declare module '*.jpeg';
+declare module '*.jpg';

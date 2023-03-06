@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ProjectWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
   height: 100%;
   width: 100%;
 
@@ -13,9 +14,9 @@ export const ProjectWrapper = styled.div`
 
 export const ImageWrapper = styled.div<{ reverse?: boolean }>`
   background: ${({ theme }) => theme.palette.common.tertiary};
-  justify-self: center;
-  width: 300px;
-  height: 300px;
+  align-self: center;
+  width: 100%;
+  height: 100%;
   ${({ reverse }) => reverse && 'order: 2;'}
 
   @media screen and (max-width: 768px) {
@@ -54,4 +55,10 @@ export const ProjectDescription = styled.span`
   @media screen and (max-width: 768px) {
     width: 100%;
   }
+`;
+
+export const ProjectImage = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 `;

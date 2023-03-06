@@ -5,6 +5,6 @@ export interface IProps {
   company: ReactNode;
   description: ReactNode;
   link: string;
+  image: string;
   reverse?: boolean;
-  linkIssue?: boolean;
 }
