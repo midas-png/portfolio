@@ -35,7 +35,6 @@ export const ComponentSliderWrapper = styled.div`
 
 export const SliderWrapper = styled(Swiper)`
   width: 100%;
-  height: 350px;
 
   .swiper-slide {
     display: flex;
