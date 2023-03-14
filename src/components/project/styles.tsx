@@ -14,7 +14,6 @@ export const ProjectWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div<{ reverse?: boolean }>`
-  background: ${({ theme }) => theme.palette.common.tertiary};
   align-self: center;
   width: 100%;
   height: 100%;

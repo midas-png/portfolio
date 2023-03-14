@@ -40,10 +40,15 @@ const variantMap = {
   `,
   quaternary: css`
     background: ${({ theme }) =>
-      `linear-gradient(to left, ${theme.palette.common.white} 50%, ${theme.palette.common.black} 50%) right`};
+      `linear-gradient(to left, ${theme.palette.common.black} 50%, ${theme.palette.common.white} 50%) right`};
     background-size: 200% 100%;
-    color: ${({ theme }) => theme.palette.common.black};
-    border: ${({ theme }) => `2px solid ${theme.palette.common.black}`};
+    color: ${({ theme }) => theme.palette.common.white};
+    border: ${({ theme }) => `2px solid ${theme.palette.common.white}`};
+
+    &:hover {
+      background-position: left;
+      color: ${({ theme }) => theme.palette.common.black};
+    }
   `,
 };
 

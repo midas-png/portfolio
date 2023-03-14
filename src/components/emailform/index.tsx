@@ -9,6 +9,7 @@ import {
 } from './styles';
 import { FORM_DATA } from 'data';
 import { Button, Title, Textfield } from 'ui';
+import { LazyShow } from 'components';
 
 interface OfferForm {
   name?: string;
@@ -41,34 +42,40 @@ export const EmailForm = () => {
 
   return (
     <ComponentWrapper name='form'>
-      <Title fontSize={90} light={true}>
-        Let's create <PurpleContent>digital products</PurpleContent> together!
-      </Title>
-      <FormWrapper>
-        {FORM_DATA.map(({ title, textfield, postfix }) => (
-          <span key={Math.random()}>
-            <Title light={true} fontSize={50}>
-              {title}
-            </Title>
-            <Textfield
-              placeholder={textfield.placeholder}
-              onInput={(e: FormEvent<HTMLInputElement>) =>
-                setValue(textfield.name, e.currentTarget.textContent)
-              }
-            />
-            {postfix && postfix}
-          </span>
-        ))}
-      </FormWrapper>
-      <ButtonWrapper>
-        <Button
-          size='large'
-          variant='secondary'
-          loading={loading}
-          onClick={handleSubmit((data) => sendEmailOffer(data))}>
-          Send!
-        </Button>
-      </ButtonWrapper>
+      <LazyShow direction='left'>
+        <Title fontSize={90} light={true}>
+          Let's create <PurpleContent>digital products</PurpleContent> together!
+        </Title>
+      </LazyShow>
+      <LazyShow direction='left'>
+        <FormWrapper>
+          {FORM_DATA.map(({ title, textfield, postfix }) => (
+            <span key={Math.random()}>
+              <Title light={true} fontSize={50}>
+                {title}
+              </Title>
+              <Textfield
+                placeholder={textfield.placeholder}
+                onInput={(e: FormEvent<HTMLInputElement>) =>
+                  setValue(textfield.name, e.currentTarget.textContent)
+                }
+              />
+              {postfix && postfix}
+            </span>
+          ))}
+        </FormWrapper>
+      </LazyShow>
+      <LazyShow direction='right'>
+        <ButtonWrapper>
+          <Button
+            size='large'
+            variant='quaternary'
+            loading={loading}
+            onClick={handleSubmit((data) => sendEmailOffer(data))}>
+            Send!
+          </Button>
+        </ButtonWrapper>
+      </LazyShow>
     </ComponentWrapper>
   );
 };
