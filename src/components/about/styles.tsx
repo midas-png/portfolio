@@ -8,7 +8,7 @@ export const ComponentWrapper = styled.div`
   background: ${({ theme }) => theme.palette.common.black};
 
   @media screen and (max-width: 1024px) {
-    padding: 0 50px;
+    padding: 50px;
     padding-bottom: 50px;
   }
 `;
