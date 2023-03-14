@@ -18,7 +18,7 @@ export const Slider: FC = () => {
     <ComponentWrapper>
       <Title fontSize={60}>What I created</Title>
       <ComponentSliderWrapper>
-        <SliderWrapper loop={true}>
+        <SliderWrapper loop={true} spaceBetween={50}>
           {PROJECTS.map(
             ({ name, company, description, link, image }, index) => (
               <Slide key={Math.random()}>
