@@ -12,13 +12,16 @@ import {
   TreePathCompanyWrapper,
   TreePathCompanyTitle,
   TreePathCompanySubtitle,
+  MainMarkerWrapper,
 } from './styles';
 import { Title } from 'ui';
 
 export const About: FC = () => {
   return (
     <ComponentWrapper>
-      <Title fontSize={60}>About me</Title>
+      <Title fontSize={60} light>
+        About <MainMarkerWrapper>me</MainMarkerWrapper>
+      </Title>
       <AboutWrapper>
         <AboutDescription>
           I'm 20 years old enthusiastic computer science student and frontend
