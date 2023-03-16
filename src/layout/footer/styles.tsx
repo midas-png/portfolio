@@ -9,6 +9,7 @@ export const FooterWrapper = styled.div`
 
   @media screen and (max-width: 1024px) {
     align-items: space-between;
+    gap: 15px;
     flex-direction: column;
   }
 `;
