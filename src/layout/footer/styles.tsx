@@ -6,6 +6,11 @@ export const FooterWrapper = styled.div`
   align-items: center;
   background: ${({ theme }) => theme.palette.common.black};
   padding: 15px 50px;
+
+  @media screen and (max-width: 1024px) {
+    align-items: space-between;
+    flex-direction: column;
+  }
 `;
 
 export const IconsWrapper = styled.div`
@@ -17,11 +22,6 @@ export const IconsWrapper = styled.div`
     width: 50px;
     fill: ${({ theme }) => theme.palette.common.white};
     cursor: pointer;
-  }
-
-  @media screen and (max-width: 1024px) {
-    align-items: space-between;
-    flex-direction: column;
   }
 `;
 
