@@ -68,13 +68,13 @@ export const STACK = {
       Icon: SiOpenapiinitiative,
     },
     {
-      name: 'React-hook-form',
+      name: 'React-Hook-Form',
     },
     {
-      name: 'yup',
+      name: 'Yup',
     },
     {
-      name: 'eslint',
+      name: 'ESlint',
       Icon: SiEslint,
     },
     {
