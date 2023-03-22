@@ -26,6 +26,7 @@ import {
   SiGithubactions,
   SiWindows,
   SiUbuntu,
+  SiStorybook,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -84,6 +85,10 @@ export const STACK = {
       name: 'NPM',
       Icon: SiNpm,
     },
+    {
+      name: 'Storybook',
+      Icon: SiStorybook,
+    },
   ],
   backend: [
     {
@@ -141,7 +146,7 @@ export const STACK = {
   ],
   testing: [
     {
-      name: 'React testing library',
+      name: 'React Testing Library',
       Icon: SiTestinglibrary,
     },
     {
