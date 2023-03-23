@@ -35,4 +35,13 @@ export const PROJECTS = [
     link: 'http://217.151.229.239/',
     image: Assets.Badtenant,
   },
+  {
+    name: 'California Castle Website',
+    company: 'Freelance',
+    description: `Freelance experience. The project was meant to be company's official website,
+    but API access was not paid. UI/UX design was made and coded by me using
+    React, React-Hook-Form, openapi-generator, Docker etc.`,
+    link: 'https://midas-png.github.io/californiacastle/',
+    image: Assets.Ccp,
+  },
 ];
