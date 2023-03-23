@@ -31,7 +31,11 @@ export const Project: FC<IProps> = ({
         </TitleWrapper>
         <ProjectDescription>{description}</ProjectDescription>
         <div>
-          <Button onClick={() => open(link)}>Learn more</Button>
+          {link ? (
+            <Button onClick={() => open(link)}>Learn more</Button>
+          ) : (
+            <Subtitle>The project is in development</Subtitle>
+          )}
         </div>
       </ContentWrapper>
     </ProjectWrapper>

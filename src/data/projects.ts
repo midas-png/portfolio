@@ -26,7 +26,7 @@ export const PROJECTS = [
   },
   {
     name: 'badTenant',
-    company: 'Self-made project',
+    company: 'My project',
     description: `My graduate work. Passport-rating of tenants and owners,
     own project made from scratch with start-up potential. While making this project 
     I got a lot of hard skills that allowed me to get my first job as a frontend developer.
@@ -43,5 +43,13 @@ export const PROJECTS = [
     React, React-Hook-Form, openapi-generator, Docker etc.`,
     link: 'https://midas-png.github.io/californiacastle/',
     image: Assets.Ccp,
+  },
+  {
+    name: 'SkillHunt',
+    company: 'My project',
+    description: `The goal of the project is to create a website that
+    provides employment recruiting services of verified IT specialists. 
+    Me and my friend are developing it.`,
+    image: Assets.Skillhunt,
   },
 ];
