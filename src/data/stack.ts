@@ -27,6 +27,7 @@ import {
   SiWindows,
   SiUbuntu,
   SiStorybook,
+  SiThreedotjs,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -66,6 +67,10 @@ export const STACK = {
     {
       name: 'openapi-generator',
       Icon: SiOpenapiinitiative,
+    },
+    {
+      name: 'Three.js',
+      Icon: SiThreedotjs,
     },
     {
       name: 'React-Hook-Form',
