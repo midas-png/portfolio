@@ -17,6 +17,21 @@ import {
 import { LazyShow } from 'components';
 import { Title } from 'ui';
 
+const monthNames = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+
 export const About: FC = () => {
   return (
     <ComponentWrapper>
@@ -81,7 +96,7 @@ export const About: FC = () => {
                     Maybe your company
                   </TreePathCompanyTitle>
                   <TreePathCompanySubtitle>
-                    March 2023 -
+                    {`${monthNames[new Date().getMonth()]} 2023 -`}
                   </TreePathCompanySubtitle>
                 </TreePathCompanyWrapper>
               </TreePathCircleWrapper>
