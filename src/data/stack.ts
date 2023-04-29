@@ -28,6 +28,7 @@ import {
   SiUbuntu,
   SiStorybook,
   SiThreedotjs,
+  SiMongodb,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -109,6 +110,9 @@ export const STACK = {
       Icon: SiSequelize,
     },
     {
+      name: 'Mongoose',
+    },
+    {
       name: 'Django',
       Icon: SiDjango,
     },
@@ -167,6 +171,10 @@ export const STACK = {
     {
       name: 'MySQL',
       Icon: SiMysql,
+    },
+    {
+      name: 'MongoDB',
+      Icon: SiMongodb,
     },
   ],
   devops: [

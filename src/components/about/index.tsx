@@ -43,7 +43,7 @@ export const About: FC = () => {
       <AboutWrapper>
         <LazyShow direction='left'>
           <AboutDescription>
-            I'm 20 years old enthusiastic computer science student and frontend
+            I'm 21 years old enthusiastic computer science student and frontend
             developer from IThub College, based in Moscow, with one year of
             commertial experience in web development. Looking to deliver
             excellent web development skills in JavaScript and TypeScript to
