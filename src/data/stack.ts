@@ -29,6 +29,7 @@ import {
   SiStorybook,
   SiThreedotjs,
   SiMongodb,
+  SiWebpack,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
@@ -94,6 +95,10 @@ export const STACK = {
     {
       name: 'Storybook',
       Icon: SiStorybook,
+    },
+    {
+      name: 'Webpack',
+      Icon: SiWebpack,
     },
   ],
   backend: [
