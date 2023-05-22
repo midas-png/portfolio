@@ -84,7 +84,7 @@ export const About: FC = () => {
                 <TreePathCompanyWrapper>
                   <TreePathCompanyTitle>IThub Group</TreePathCompanyTitle>
                   <TreePathCompanySubtitle>
-                    March 2022 - Feb 2023 <br /> (1 year)
+                    Jan 2022 - Feb 2023 <br /> (1 year, 2 months)
                   </TreePathCompanySubtitle>
                 </TreePathCompanyWrapper>
               </TreePathCircleWrapper>

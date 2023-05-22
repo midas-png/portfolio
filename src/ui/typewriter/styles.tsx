@@ -8,6 +8,7 @@ const blinking = keyframes`
 
 export const TypewriterWrapper = styled.div`
   display: flex;
+  height: 100%;
 `;
 
 export const TypewriterText = styled.span<{ fontSize?: number }>`

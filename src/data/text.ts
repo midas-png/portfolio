@@ -1,5 +1,5 @@
 export const TEXT = [
-  'Frontend Developer who loves solving issues.',
+  'Fullstack Developer who loves solving issues.',
   'Based in Moscow and making creative projects from the beginning.',
   'Waiting for your offer to bring excellent experience to your business!',
 ];
