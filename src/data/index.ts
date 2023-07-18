@@ -5,3 +5,4 @@ export { TEXT } from './text';
 export { FORM_DATA } from './formData';
 export { TYPES } from './types';
 export { SOCIAL_MEDIA } from './socialMedia';
+export { ARTICLES } from './articles';

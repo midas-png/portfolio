@@ -88,6 +88,7 @@ export const ButtonComponent = styled.button<IProps>`
   justify-content: center;
   align-items: center;
   height: fit-content;
+  width: fit-content;
   font-weight: 800;
   font-size: 15px;
   transition: all 0.3s ease-in-out;
