@@ -13,8 +13,8 @@ export const NavbarWrapper = styled.header`
   }
 
   @media screen and (max-width: 1024px) {
-    justify-content: center;
-    padding: 20px 0;
+    justify-content: space-between;
+    padding: 20px 50px;
   }
 `;
 
@@ -23,3 +23,17 @@ export const ButtonWrapper = styled.div`
     display: none;
   }
 `;
+
+export const MenuWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 50px;
+`;
+
+export const MenuLanguage = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`;
+
+export const Language = styled.option``;

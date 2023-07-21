@@ -27,7 +27,6 @@ export const ImageWrapper = styled.div<{ reverse?: boolean }>`
 export const ContentWrapper = styled.div<{ reverse?: boolean }>`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   gap: 20px;
   ${({ reverse }) => !reverse && 'justify-self: center;'}
 `;

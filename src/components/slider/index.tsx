@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   ComponentWrapper,
   ComponentSliderWrapper,
@@ -10,37 +11,37 @@ import {
   NotificationTopBorder,
 } from './styles';
 import { LazyShow } from 'components';
-import { PROJECTS } from 'data';
+import { PROJECTS_EN, PROJECTS_RU } from 'data';
 import { Title } from 'ui';
 import { Project } from 'components';
 
 export const Slider: FC = () => {
+  const { t, i18n } = useTranslation();
+  const PROJECTS = i18n.language === 'en' ? PROJECTS_EN : PROJECTS_RU;
+
   return (
     <LazyShow direction='left'>
       <ComponentWrapper>
-        <Title fontSize={60}>What I created</Title>
+        <Title fontSize={60}>{t('whatICreated')}</Title>
         <ComponentSliderWrapper>
           <SliderWrapper loop={true} spaceBetween={50}>
-            {PROJECTS.map(
-              ({ name, company, description, link, image }, index) => (
-                <Slide key={Math.random()}>
-                  <Project
-                    name={name}
-                    company={company}
-                    description={description}
-                    link={link}
-                    image={image}
-                    reverse={index % 2 === 0}
-                  />
-                </Slide>
-              )
-            )}
+            {PROJECTS.map(({ name, company, description, image }, index) => (
+              <Slide key={Math.random()}>
+                <Project
+                  name={name}
+                  company={company}
+                  description={description}
+                  image={image}
+                  reverse={index % 2 === 0}
+                />
+              </Slide>
+            ))}
           </SliderWrapper>
           <NotificationWrapper>
             <NotificationTopBorderWrapper>
               <NotificationTopBorder />
             </NotificationTopBorderWrapper>
-            <NotificationSwiper>SWIPE</NotificationSwiper>
+            <NotificationSwiper>{t('swipe')}</NotificationSwiper>
           </NotificationWrapper>
         </ComponentSliderWrapper>
       </ComponentWrapper>

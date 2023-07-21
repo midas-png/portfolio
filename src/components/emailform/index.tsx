@@ -1,13 +1,14 @@
 import { useState, FormEvent } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 import {
   ComponentWrapper,
   FormWrapper,
   ButtonWrapper,
   PurpleContent,
 } from './styles';
-import { FORM_DATA } from 'data';
+import { FORM_DATA_EN, FORM_DATA_RU } from 'data';
 import { Button, Title, Textfield } from 'ui';
 import { LazyShow } from 'components';
 
@@ -21,6 +22,8 @@ interface OfferForm {
 export const EmailForm = () => {
   const [loading, setLoading] = useState(false);
   const { handleSubmit, setValue } = useForm();
+  const { t, i18n } = useTranslation();
+  const FORM_DATA = i18n.language === 'en' ? FORM_DATA_EN : FORM_DATA_RU;
 
   const sendEmailOffer = (values: OfferForm) => {
     const { name, company, offer, contacts } = values;
@@ -44,7 +47,8 @@ export const EmailForm = () => {
     <ComponentWrapper name='form'>
       <LazyShow direction='left'>
         <Title fontSize={90} light={true}>
-          Let's create <PurpleContent>digital products</PurpleContent> together!
+          {t('letsCreate')}{' '}
+          <PurpleContent>{t('digitalProdicts')}</PurpleContent> {t('together')}
         </Title>
       </LazyShow>
       <LazyShow direction='left'>
@@ -72,7 +76,7 @@ export const EmailForm = () => {
             variant='quaternary'
             loading={loading}
             onClick={handleSubmit((data) => sendEmailOffer(data))}>
-            Send!
+            {t('send')}
           </Button>
         </ButtonWrapper>
       </LazyShow>

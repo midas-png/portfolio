@@ -1,6 +1,6 @@
 import { Assets } from 'assets';
 
-export const PROJECTS = [
+export const PROJECTS_EN = [
   {
     name: 'uCode',
     company: 'IThub Group',
@@ -10,7 +10,6 @@ export const PROJECTS = [
     doing hotfixes, suggesting technical solutions and reviewing designer's work.
     Also I have been communitacing a lot with design team, backend team and the managers.
 `,
-    link: 'https://disk.yandex.ru/d/_40OHIKCqS8cxA',
     image: Assets.Ucode,
   },
   {
@@ -19,20 +18,17 @@ export const PROJECTS = [
     description: `A service for creating and passing
     tests and exams for IThub College. I used to be a stand-in who can
     make bug fixes and developing new features ASAP. Successfuly fixed a lot of
-    critical bugs, reviewed and refactored a huge part of the code. Resolved technical issues
-    with the technologies stack.`,
-    link: 'https://pollhub.ru/',
+    critical bugs, reviewed and refactored a huge part of the code.`,
     image: Assets.Pollhub,
   },
   {
     name: 'badTenant',
     company: 'My project',
-    description: `My graduate work. Passport-rating of tenants and owners,
-    own project made from scratch with start-up potential. While making this project 
+    description: `My graduate work. Passport-rating of tenants and landlords,
+    that allows to check the rating of tenant or landlord.
+    Own project made from scratch with start-up potential. While making this project 
     I got a lot of hard skills that allowed me to get my first job as a frontend developer.
-    I usually doing some refactoring and improvments. Also it's my first big project 
-    made by me alone.`,
-    link: 'http://217.151.229.239/',
+    I usually doing some refactoring and improvments.`,
     image: Assets.Badtenant,
   },
   {
@@ -41,7 +37,6 @@ export const PROJECTS = [
     description: `Freelance experience. The project was meant to be company's official website,
     but API access was not paid. UI/UX design was made and coded by me using
     React, React-Hook-Form, openapi-generator, Docker etc.`,
-    link: 'https://midas-png.github.io/californiacastle/',
     image: Assets.Ccp,
   },
   {
@@ -50,6 +45,54 @@ export const PROJECTS = [
     description: `The goal of the project is to create a website that
     provides employment recruiting services of verified IT specialists. 
     Me and my friend are developing it.`,
+    image: Assets.Skillhunt,
+  },
+];
+
+export const PROJECTS_RU = [
+  {
+    name: 'uCode',
+    company: 'IThub Group',
+    description: `Биржа готовых решений, таких как дизайн, сайты, ассеты и прочее.
+    Я почти полностью выполнил клиентскую часть с использованием React и JavaScript.
+    Также я занимался рефакторингом, исправлением ошибок, предлагал технические решения
+    и проводил ревью дизайна. Также я общался с командой дизайна, командой backend и менеджерами.
+`,
+    image: Assets.Ucode,
+  },
+  {
+    name: 'Pollhub',
+    company: 'IThub Group',
+    description: `Сервис для создания и прохождения тестов и экзаменов.
+    Я был стенд-ином, занимался исправлением ошибкок и серьезых багов, оперативно разрабатывал новые функции.
+    Успешно исправил множество критических ошибок, просмотрел и переделал значительную часть кода.
+    `,
+    image: Assets.Pollhub,
+  },
+  {
+    name: 'badTenant',
+    company: 'Мой проект',
+    description: `Моя дипломная работа. Проект-паспорт для собственников и арендаторов,
+    предоставляющий возможность отслеживать рейтинг пользователей.
+    Собственных проект, созданный с нуля. Во время разработки проекта получил множество
+    хард скиллов, которые позволили получить мою первую работу в качестве frontend-разработчика
+    Иногда провожу рефакторинг.`,
+    image: Assets.Badtenant,
+  },
+  {
+    name: 'California Castle Website',
+    company: 'Freelance',
+    description: `Опыт фриланса. Проект предполагал создание официального веб-сайта компании,
+    но доступ к API не был оплачен. UI и UX был создан мной.
+    При разработке использовал React, React-Hook-Form, openapi-generator, Docker и т.д.`,
+    image: Assets.Ccp,
+  },
+  {
+    name: 'SkillHunt',
+    company: 'My project',
+    description: `Цель проекта заключается в создании веб-сайта, который предоставляет
+    услуги по подбору проверенных специалистов в области информационных технологий.
+    Я и мой друг, на данный момент, занимаемся его разработкой.`,
     image: Assets.Skillhunt,
   },
 ];

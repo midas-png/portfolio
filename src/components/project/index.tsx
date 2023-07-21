@@ -9,13 +9,12 @@ import {
   Subtitle,
 } from './styles';
 import { IProps } from './props';
-import { Button, Title } from 'ui';
+import { Title } from 'ui';
 
 export const Project: FC<IProps> = ({
   name,
   company,
   description,
-  link,
   image,
   reverse,
 }) => {
@@ -30,13 +29,6 @@ export const Project: FC<IProps> = ({
           <Subtitle>{company}</Subtitle>
         </TitleWrapper>
         <ProjectDescription>{description}</ProjectDescription>
-        <div>
-          {link ? (
-            <Button onClick={() => open(link)}>Learn more</Button>
-          ) : (
-            <Subtitle>The project is in development</Subtitle>
-          )}
-        </div>
       </ContentWrapper>
     </ProjectWrapper>
   );

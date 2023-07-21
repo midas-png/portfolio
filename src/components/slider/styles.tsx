@@ -75,4 +75,5 @@ export const NotificationTopBorder = styled.div`
 
 export const NotificationSwiper = styled.span`
   color: ${({ theme }) => theme.palette.common.black};
+  text-transform: uppercase;
 `;

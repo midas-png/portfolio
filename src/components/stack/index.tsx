@@ -1,4 +1,5 @@
 import { useState, FC } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   ComponentWrapper,
   ComponentStackWrapper,
@@ -14,13 +15,14 @@ import { STACK, TYPES } from 'data';
 type StackType = typeof TYPES[number];
 
 export const Stack: FC = () => {
+  const { t } = useTranslation();
   const [stackType, setStackType] = useState<StackType>('frontend');
   const stack = STACK[stackType];
 
   return (
     <LazyShow direction='left'>
       <ComponentWrapper>
-        <Title fontSize={60}>What I use</Title>
+        <Title fontSize={60}>{t('whatIUse')}</Title>
         <ComponentStackWrapper>
           <HeaderWrapper>
             {TYPES.map((name) => (
@@ -29,7 +31,7 @@ export const Stack: FC = () => {
                   variant={stackType === name ? 'tertiary' : 'secondary'}
                   size='large'
                   onClick={() => setStackType(name)}>
-                  {name}
+                  {t(name)}
                 </Button>
               </ButtonWrapper>
             ))}

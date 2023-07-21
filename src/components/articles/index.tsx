@@ -1,15 +1,17 @@
 import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ArticlesWrapper, ListWrapper, ListItem } from './styles';
 import { ARTICLES } from 'data';
 import { LazyShow } from 'components';
 import { Title, Button } from 'ui';
 
 export const Articles: FC = () => {
+  const { t } = useTranslation();
   return (
     <ArticlesWrapper>
       <LazyShow direction='left'>
         <Title fontSize={60} light>
-          Articles
+          {t('articles')}
         </Title>
       </LazyShow>
       <ListWrapper>
@@ -21,7 +23,7 @@ export const Articles: FC = () => {
                 variant='quaternary'
                 size='large'
                 onClick={() => open(link)}>
-                Read
+                {t('read')}
               </Button>
             </ListItem>
           ))}
