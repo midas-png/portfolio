@@ -60,7 +60,11 @@ export const TreePathCircleDescription = styled.span`
   color: ${({ theme }) => theme.palette.common.white};
 
   @media screen and (max-width: 786px) {
-    right: 90px;
+    right: 120px;
+  }
+
+  @media screen and (max-width: 550px) {
+    max-width: 110px;
   }
 `;
 
