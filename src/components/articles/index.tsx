@@ -14,8 +14,8 @@ export const Articles: FC = () => {
           {t('articles')}
         </Title>
       </LazyShow>
-      <ListWrapper>
-        <LazyShow direction='left'>
+      <LazyShow direction='left'>
+        <ListWrapper>
           {ARTICLES.map(({ title, link }) => (
             <ListItem key={Math.random()}>
               <Title light>{title}</Title>
@@ -27,8 +27,8 @@ export const Articles: FC = () => {
               </Button>
             </ListItem>
           ))}
-        </LazyShow>
-      </ListWrapper>
+        </ListWrapper>
+      </LazyShow>
     </ArticlesWrapper>
   );
 };
