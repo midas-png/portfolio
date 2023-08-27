@@ -7,4 +7,8 @@ export const ARTICLES = [
     title: '52 Frontend Interview Questions - JavaScript',
     link: 'https://dev.to/m_midas/52-frontend-interview-questions-javascript-59h6',
   },
+  {
+    title: '41 Frontend Interview Questions - CSS',
+    link: 'https://dev.to/m_midas/41-frontend-interview-questions-css-4imc'
+  }
 ];
