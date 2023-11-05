@@ -13,23 +13,21 @@ i18n.use(initReactI18next).init({
         emailMe: 'Email Me',
         aboutAbout: 'About',
         aboutMe: 'me',
-        aboutTextFirst: `I'm 21 years old enthusiastic computer science student and frontend
-            developer from IThub College, based in Moscow, with more than one year of
-            commertial experience in web development. Looking to deliver
-            excellent web development skills in JavaScript and TypeScript to
-            help grow the business. Also I was learning Python and Java in the
-            college.`,
-        aboutTextSecond: `I decided to become a programmer after I passed the exams for
-            the universities to become a translator, but I accidentally pressed
-            on play button of learning video about HTML, CSS and JavaScript and
-            it became extremely interesting for me. So right before sending
-            documents to the universities I decided to become a pro at
-            programming. I went to private IT college called ITHub College and
-            assigned a goal to become a Middle Programmer on my graduation.
-            After 1.5 year of hard working, learning and successes of my team
-            project, I got my first job as junior frontend developer. It helped
-            me to get a lot of hard and soft skills. And now I'm searhing for
-            new experience and goals to be achieved.`,
+        aboutTextFirst: `My name is Yan.
+            I graduated from one of the top private IT colleges in Russia - 
+            IThub College (ranked 30th among ed-tech companies).
+            Currently, I work as a Middle Frontend Developer, I aspire to progress 
+            and advance my skills to become a Lead Frontend Developer.`,
+        aboutTextSecond: `
+            У меня есть опыт коммерческой разработки, проведения код-ревью и работы в команде.
+            Я могу применить свои навыки и опыт для выполнения своих обязанностей. 
+            Я способен самостоятельно решать задачи и эффективно сотрудничать в команде. 
+            Помимо работы, мне нравится писать статьи на IT-темы и работать над личными проектами. 
+            Одна из моих статей получила более 40 000 просмотров за меньше чем за месяц. 
+            Я осознаю важность быть уникальным специалистом на сегодняшнем рынке, 
+            готовым решать разнообразные задачи. Поэтому, начиная со второго курса в колледже, 
+            я начал изучать бекенд-разработку, DevOps, тестирование и совершенствовать свои софт и хард скиллы. 
+            Моя личная цель - достичь значительного успеха в IT-сфере и стать одним из лидеров в отрасли.`,
         collegeEducation: 'Private college education',
         collegeExperienceRange: 'Jan 2022 - Feb 2023',
         collegeExperience: '(1 year, 2 months)',
@@ -51,10 +49,12 @@ i18n.use(initReactI18next).init({
         emailMe: 'Написать мне',
         aboutAbout: 'Обо',
         aboutMe: 'мне',
-        aboutTextFirst: `Я студент-энтузиаст в области 
-        информационных технологий и Middle Frontend-разработчиком, 
-        разрабатываю корпоративные сервисы и проекты, использую навыки 
-        JavaScript и TypeScript для развития бизнеса.`,
+        aboutTextFirst: `
+        Меня зовут Ян.
+        Я окончил один из лучших частных колледжей информационных технологий в России - IThub College
+        (занимающий 30-е место среди компаний в области образования и технологий).
+        В настоящее время я работаю Middle Frontend Разработчиком и стремлюсь
+        развивать свои навыки и продвигаться к позиции Lead Frontend.`,
         aboutTextSecond: `Изначально хотел поступил на переводчика,
         но стал студентом-программистом после сдачиаменов для поступления
         в московский лингвистический университет МГЛУ. Я наткнулся на видео

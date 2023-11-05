@@ -32,14 +32,6 @@ export const PROJECTS_EN = [
     image: Assets.Badtenant,
   },
   {
-    name: 'California Castle Website',
-    company: 'Freelance',
-    description: `Freelance experience. The project was meant to be company's official website,
-    but API access was not paid. UI/UX design was made and coded by me using
-    React, React-Hook-Form, openapi-generator, Docker etc.`,
-    image: Assets.Ccp,
-  },
-  {
     name: 'SkillHunt',
     company: 'My project',
     description: `The goal of the project is to create a website that
@@ -78,14 +70,6 @@ export const PROJECTS_RU = [
     хард скиллов, которые позволили получить мою первую работу в качестве frontend-разработчика
     Иногда провожу рефакторинг.`,
     image: Assets.Badtenant,
-  },
-  {
-    name: 'California Castle Website',
-    company: 'Freelance',
-    description: `Опыт фриланса. Проект предполагал создание официального веб-сайта компании,
-    но доступ к API не был оплачен. UI и UX был создан мной.
-    При разработке использовал React, React-Hook-Form, openapi-generator, Docker и т.д.`,
-    image: Assets.Ccp,
   },
   {
     name: 'SkillHunt',

@@ -52,7 +52,7 @@ export const STACK = {
       Icon: SiStyledcomponents,
     },
     {
-      name: 'SCSS/Sass',
+      name: 'SCSS',
       Icon: DiSass,
     },
     {
@@ -81,11 +81,18 @@ export const STACK = {
       name: 'Yup',
     },
     {
+      name: 'Zod',
+    },
+    {
       name: 'ESlint',
       Icon: SiEslint,
     },
     {
       name: 'Prettier',
+      Icon: SiPrettier,
+    },
+    {
+      name: 'Stylelint',
       Icon: SiPrettier,
     },
     {
@@ -99,6 +106,9 @@ export const STACK = {
     {
       name: 'Webpack',
       Icon: SiWebpack,
+    },
+    {
+      name: 'Vite',
     },
   ],
   backend: [
@@ -167,6 +177,9 @@ export const STACK = {
       name: 'Jest',
       Icon: SiJest,
     },
+    {
+      name: "puppeteer"
+    },
   ],
   database: [
     {
@@ -188,7 +201,7 @@ export const STACK = {
       Icon: SiDocker,
     },
     {
-      name: 'docker-compose',
+      name: 'Docker Compose',
     },
     {
       name: 'nginx',
