@@ -20,7 +20,8 @@ export const ARTICLES = [
     link: 'https://dev.to/m_midas/15-most-common-frontend-interview-questions-4njp',
   },
   {
-    title: 'Exploring Error Boundary in React: Enhancing Robustness and Error Handling',
+    title:
+      'Exploring Error Boundary in React: Enhancing Robustness and Error Handling',
     link: 'https://dev.to/m_midas/exploring-error-boundary-in-react-enhancing-robustness-and-error-handling-3457',
   },
 ];

@@ -178,7 +178,7 @@ export const STACK = {
       Icon: SiJest,
     },
     {
-      name: "puppeteer"
+      name: 'puppeteer',
     },
   ],
   database: [
