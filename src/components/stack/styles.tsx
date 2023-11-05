@@ -26,6 +26,7 @@ export const HeaderWrapper = styled.div`
 
   @media screen and (max-width: 1024px) {
     width: 100%;
+    justify-content: center;
   }
 `;
 

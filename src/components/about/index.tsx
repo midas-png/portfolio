@@ -18,21 +18,6 @@ import {
 import { LazyShow } from 'components';
 import { Title } from 'ui';
 
-const monthNames = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-];
-
 export const About: FC = () => {
   const { t } = useTranslation();
 
@@ -68,7 +53,7 @@ export const About: FC = () => {
               <TreePathLine />
               <TreePathCircleWrapper>
                 <TreePathCircleDescription>
-                  Junior Frontend Developer
+                  Frontend Developer
                 </TreePathCircleDescription>
                 <TreePathCircle>2</TreePathCircle>
                 <TreePathCompanyWrapper>
@@ -81,13 +66,14 @@ export const About: FC = () => {
               </TreePathCircleWrapper>
               <TreePathLine />
               <TreePathCircleWrapper>
+                <TreePathCircleDescription>
+                  Middle Frontend Developer
+                </TreePathCircleDescription>
                 <TreePathCircle>3</TreePathCircle>
                 <TreePathCompanyWrapper>
-                  <TreePathCompanyTitle>
-                    Maybe your company
-                  </TreePathCompanyTitle>
+                  <TreePathCompanyTitle>AMMC</TreePathCompanyTitle>
                   <TreePathCompanySubtitle>
-                    {`${monthNames[new Date().getMonth()]} 2023 -`}
+                    {t('ammcExperienceRange')}
                   </TreePathCompanySubtitle>
                 </TreePathCompanyWrapper>
               </TreePathCircleWrapper>
