@@ -18,19 +18,18 @@ i18n.use(initReactI18next).init({
             IThub College (ranked 30th among ed-tech companies).
             Currently, I work as a Middle Frontend Developer, I aspire to progress 
             and advance my skills to become a Lead Frontend Developer.`,
-        aboutTextSecond: `
-            У меня есть опыт коммерческой разработки, проведения код-ревью и работы в команде.
-            Я могу применить свои навыки и опыт для выполнения своих обязанностей. 
-            Я способен самостоятельно решать задачи и эффективно сотрудничать в команде. 
-            Помимо работы, мне нравится писать статьи на IT-темы и работать над личными проектами. 
-            Одна из моих статей получила более 40 000 просмотров за меньше чем за месяц. 
-            Я осознаю важность быть уникальным специалистом на сегодняшнем рынке, 
-            готовым решать разнообразные задачи. Поэтому, начиная со второго курса в колледже, 
-            я начал изучать бекенд-разработку, DevOps, тестирование и совершенствовать свои софт и хард скиллы. 
-            Моя личная цель - достичь значительного успеха в IT-сфере и стать одним из лидеров в отрасли.`,
+        aboutTextSecond: `I have experience in commercial development, conducting code reviews and working in a team.
+            I can apply my skills and experience to fulfill my duties. 
+            I am able to solve problems on my own and collaborate effectively in a team. 
+            In addition to work, I like to write articles on IT topics and work on personal projects. 
+            One of my articles has received over 40,000 views in less than a month. 
+            I understand the importance of being a unique specialist in today's market, 
+            ready to solve a variety of tasks. Therefore, starting from my second year in college,
+            I began to study backend development, DevOps, testing and improve my software and hard skills. 
+            My personal goal is to achieve significant success in the IT field and become one of the leaders in the industry.`,
         collegeEducation: 'Private college education',
-        collegeExperienceRange: 'Jan 2022 - Feb 2023',
-        collegeExperience: '(1 year, 2 months)',
+        collegeExperienceRange: 'Jan 2022 - Apr 2023',
+        collegeExperience: '(1 year, 4 months)',
         ammcExperienceRange: 'Jun 2023 - current',
         articles: 'My articles',
         read: 'Read',
@@ -67,8 +66,8 @@ i18n.use(initReactI18next).init({
         Junior Frontend-разработчика. Это помогло получить множество хард и софт навыков,
         которые помогают реализовывать проекты. Я ищу новый опыт и новые цели, которые хочу достичь.`,
         collegeEducation: 'Обучение в частном колледже',
-        collegeExperienceRange: 'Янв 2022 - Фев 2023',
-        collegeExperience: '(1 год, 2 месяца)',
+        collegeExperienceRange: 'Янв 2022 - Апр 2023',
+        collegeExperience: '(1 год, 4 месяца)',
         ammcExperienceRange: 'Июнь 2023 - по н.в.',
         articles: 'Мои статьи',
         read: 'Читать',
