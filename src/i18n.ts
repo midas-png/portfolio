@@ -18,7 +18,8 @@ i18n.use(initReactI18next).init({
             IThub College (ranked 30th among ed-tech companies).
             Currently, I work as a Middle Frontend Developer, I aspire to progress 
             and advance my skills to become a Lead Frontend Developer.`,
-        aboutTextSecond: `I have experience in commercial development, conducting code reviews and working in a team.
+        aboutTextSecond: `I have experience in commercial development, 
+            conducting code reviews and working in a team.
             I can apply my skills and experience to fulfill my duties. 
             I am able to solve problems on my own and collaborate effectively in a team. 
             In addition to work, I like to write articles on IT topics and work on personal projects. 
