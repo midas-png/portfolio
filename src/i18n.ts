@@ -27,7 +27,8 @@ i18n.use(initReactI18next).init({
             I understand the importance of being a unique specialist in today's market, 
             ready to solve a variety of tasks. Therefore, starting from my second year in college,
             I began to study backend development, DevOps, testing and improve my software and hard skills. 
-            My personal goal is to achieve significant success in the IT field and become one of the leaders in the industry.`,
+            My personal goal is to achieve significant success
+            in the IT field and become one of the leaders in the industry.`,
         collegeEducation: 'Private college education',
         collegeExperienceRange: 'Jan 2022 - Apr 2023',
         collegeExperience: '(1 year, 4 months)',
